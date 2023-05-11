@@ -1,0 +1,20 @@
+body > * {
+    padding: 0.5em 1em;
+}
+
+nav a {
+    padding-left: 1em;
+}
+
+nav a:first-child {
+    padding-left: 0;
+}
+
+.options-loop {
+    list-style: none;
+    padding-left: 0;
+}
+
+.options-loop input {
+    margin-right: 2em;
+}
