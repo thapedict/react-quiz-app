@@ -44,7 +44,7 @@ function Question() {
 
     setSelected("");
 
-    const q = getNextQuestion(question.id);
+    const q = getNextQuestion(AllQuestions, question.id);
 
     if (!q) {
       navigate("/results");

@@ -42,10 +42,10 @@ export function getQuestion(questions: IQuestion[], questionID: number): IQuesti
   return questions.find((q) => q.id === questionID);
 }
 
-export function getNextQuestion(currentID: number):IQuestion|undefined {
-  let i = AllQuestions.findIndex((a) => a.id === currentID);
+export function getNextQuestion(questions:IQuestion[],currentID: number):IQuestion|undefined {
+  let index = questions.findIndex((a) => a.id === currentID);
 
-  return AllQuestions[++i];
+  return AllQuestions[++index];
 }
 
 export function checkAnswer(question: IQuestion,answer: string):boolean {
